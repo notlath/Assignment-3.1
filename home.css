@@ -5,9 +5,8 @@ html {
 body {
   margin: 0;
 }
-
 a {
-  font-family: "Monstserrat", sans-serif;
+
   color: inherit;
   text-decoration: none;
 }
@@ -39,7 +38,7 @@ h2.a:hover {
 }
 .bg {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100vh;
   background-image: url(./assets/home-header.jpg);
   background-size: cover;
@@ -90,6 +89,7 @@ ul {
   text-decoration: none;
   transition: all 0.5s ease;
   width: 153px;
+  font-size: 20px;
 }
 
 .list a {
