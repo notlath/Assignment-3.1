@@ -24,13 +24,18 @@ h1:hover {
   color: #395c77;
 }
 h2.a {
- 
   color: white;
   margin: 0px;
   margin-bottom: 10px;
   margin-left: 0px;
   font-size: 16px;
   font-family: "Poppins Light", sans-serif;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+h2.a:hover {
+  transition: 0.5s;
+  color: #395c77;
 }
 .bg {
   margin: 0;
@@ -59,6 +64,74 @@ h2.a {
   z-index: 9999;
   align-items: center;
 }
+/*Top Bar*/
+nav {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-grow: 1;
+}
+
+ul {
+  background: transparent;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+.list {
+  color: #fff;
+  background: transparent;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  width: 153px;
+}
+
+.list a {
+  color: #fff7f1;
+}
+
+.list:hover,
+.list:focus-within {
+  background: #467b8a56;
+  cursor: pointer;
+}
+
+.list:focus-within a {
+  outline: none;
+}
+
+ul .list ul {
+  background: #2b292b;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 100%;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  width: 100%;
+}
+
+ul .list:hover > ul,
+ul .listi:focus-within > ul,
+ul .listi ul:hover,
+ul .list ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul .list ul .list {
+  clear: both;
+}
+
 .div-logo {
   display: flex;
 }
