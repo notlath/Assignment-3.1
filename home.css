@@ -74,6 +74,7 @@ h2.a:hover {
   background-color: #467b8a55;
   overflow: auto;
   scroll-behavior: smooth;
+  padding-bottom: 0;
 }
 .top-bar {
   margin: 0px;
@@ -90,10 +91,12 @@ h2.a:hover {
 }
 
 .description {
+  justify-content: center;
   text-align: left;
   background-color: #ffffffc8;
-  height: 200vh;
+  height: 170vh;
   padding: 20px;
+  padding-bottom: 0;
   padding-left: 50px;
   font-size: 30px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -103,7 +106,7 @@ h2.a:hover {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 80px;
+
   background-size: cover;
   background-attachment: fixed;
 }
@@ -254,47 +257,3 @@ ul .list ul .list {
   content: none;
 }
 
-.footer-distributed .footer-right {
-  float: right;
-  margin-top: 6px;
-  max-width: 180px;
-}
-
-.footer-distributed .footer-right a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: #33383b;
-  border-radius: 2px;
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-  margin-left: 3px;
-  transition: all 0.25s;
-}
-
-.footer-distributed .footer-right a:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
-
-.footer-distributed p.footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* Media Queries */
-
-@media (max-width: 600px) {
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
-    text-align: center;
-  }
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
-}
