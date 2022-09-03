@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+  <title>Reservation</title>
+  <link
+    rel="icon"
+    href="./assets/logo.ico
+"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,200;0,400;0,700;1,300&family=Playfair+Display&family=Poppins:wght@900&family=Raleway:wght@300&family=Roboto:wght@300;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="reservation.css" />
+  <title></title>
+</head>
+
+<body>
+  <div class="bg">
+    <div class="bg-fx">
+      <div class="top-bar">
+        <div class="div-logo">
+          <a href="home.html"
+            ><img
+              src="./assets/logo.png"
+              alt="Paradise Land"
+              style="width: 70px; height: 70px"
+            />
+          </a>
+          <div class="div-title">
+            <a href="home.html">
+              <h1 class="title">パラダイスランド!!</h1>
+              <h2 class="a"><em>MAKING YOUR VACATION A MAGICAL ONE</em></h2></a
+            >
+          </div>
+        </div>
+        <span style="flex-grow: 1"></span>
+
+        <ul>
+          <li class="list">
+            <a href="./home.html">HOME</a>
+          </li>
+          <li class="list">
+            <a href="./amenities.html">AMENITIES</a>
+          </li>
+          <li class="list"><a href="./room-rate.html">ROOM RATE</a></li>
+          <li class="list">
+            <a href="#" aria-haspopup="true">OTHER</a>
+            <ul>
+              <li class="list"><a href="./reservation.html">RESERVATION</a></li>
+              <li class="list"><a href="#ABOUT US">ABOUT US </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="description">
+        <h1>RESERVATION FORMS</h1>
+        <div class="forms">
+          <form action="reservation.php" method="post">
+            <div class="elem-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="visitor_name"
+                placeholder="John Doe"
+                pattern="[A-Z\sa-z]{3,20}"
+                required
+              />
+            </div>
+            <div class="elem-group">
+              <label for="email">Your E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="visitor_email"
+                placeholder="john.doe@email.com"
+                required
+              />
+            </div>
+            <div class="elem-group">
+              <label for="phone">Your Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="visitor_phone"
+                placeholder="498-348-3872"
+                pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+                required
+              />
+            </div>
+
+            <div class="elem-group inlined">
+              <label for="adult">Adults</label>
+              <input
+                type="number"
+                id="adult"
+                name="total_adults"
+                placeholder="2"
+                min="1"
+                required
+              />
+            </div>
+            <div class="elem-group inlined-1">
+              <label for="child">Children</label>
+              <input
+                type="number"
+                id="child"
+                name="total_children"
+                placeholder="2"
+                min="0"
+                required
+              />
+            </div>
+            <hr />
+            <div class="elem-group inlined">
+              <label for="checkin-date">Check-in Date</label>
+              <input type="date" id="checkin-date" name="checkin" required />
+            </div>
+            <div class="elem-group inlined-1">
+              <label for="checkout-date">Check-out Date</label>
+              <input type="date" id="checkout-date" name="checkout" required />
+            </div>
+            <div class="elem-group">
+              <label for="room-selection">Select Room Preference</label>
+              <select id="room-selection" name="room_preference" required>
+                <option value="">Choose a Room from the List</option>
+                <option value="connecting">Connecting</option>
+                <option value="adjoining">Adjoining</option>
+                <option value="adjacent">Adjacent</option>
+              </select>
+            </div>
+            <hr />
+            <div class="elem-group">
+              <label for="message">Anything Else?</label>
+              <textarea
+                id="message"
+                name="visitor_message"
+                placeholder="Tell us anything else that might be important."
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Book The Rooms</button>
+          </form>
+        </div>
+      </div>
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <p class="footer-links">
+            <a class="link-1" href="#HOME">Home</a>
+
+            <a href="#">Blog</a>
+
+            <a href="#">Pricing</a>
+
+            <a href="#ABOUT US">About</a>
+
+            <a href="#">FAQ</a>
+
+            <a href="#">Contact</a>
+          </p>
+
+          <p>パラダイスランド!! &copy; 2022</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
