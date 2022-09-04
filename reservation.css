@@ -262,8 +262,7 @@ ul .list ul .list {
 
 form {
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   text-align: left;
 }
 body {
@@ -329,6 +328,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  margin-bottom: 20px;
 }
 
 button:hover {
