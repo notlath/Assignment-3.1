@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  width: 100%;
 }
 a {
   color: inherit;
@@ -11,7 +12,7 @@ a {
 }
 .title {
   margin: 0;
-  font-size: 40px;
+  font-size: 3rem;
   color: white;
   font-family: "Poppins", sans-serif;
   -webkit-transition: color 1s;
@@ -19,7 +20,7 @@ a {
 }
 .paradaisu {
   font-family: "Bebas Neue", cursive;
-  font-size: 80px;
+  font-size: 5.5rem;
   text-align: center;
 }
 h1 {
@@ -70,6 +71,7 @@ h2.a:hover {
 }
 .bg-fx {
   height: 100%;
+
   backdrop-filter: blur(8px);
   background-color: #467b8a55;
   overflow: auto;
@@ -88,12 +90,13 @@ h2.a:hover {
   z-index: 9999;
   align-items: center;
   height: 100px;
+  
 }
 
 .description {
   justify-content: center;
   text-align: left;
-  align-items: center;
+
   background-color: #ffffffc8;
   height: auto;
   padding-top: 0;
