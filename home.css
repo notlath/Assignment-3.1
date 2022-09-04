@@ -95,7 +95,7 @@ h2.a:hover {
   text-align: left;
   align-items: center;
   background-color: #ffffffc8;
-  height: 150vh;
+  height: auto;
   padding-top: 0;
   padding-left: 50px;
   padding-right: 50px;
